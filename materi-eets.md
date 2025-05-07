@@ -92,15 +92,8 @@
 
 ### 1. Uniform
 **Notasi**: $X \sim \text{U}(a, b)$  
-**PDF**:
-$$
-f(x) = \frac{1}{b - a} \quad \text{for } a \leq x \leq b
-$$
-
-**CDF**:
-$$
-F(x) = \frac{x - a}{b - a} \quad \text{for } a \leq x \leq b
-$$
+**PDF**: $f(x) = \frac{1}{b - a} \quad \text{for } a \leq x \leq b$
+**CDF**: $F(x) = \frac{x - a}{b - a} \quad \text{for } a \leq x \leq b$
 **Mean**: $\mathbb{E}[X] = \frac{a + b}{2}$  
 **Variance**: $\text{Var}(X) = \frac{(b - a)^2}{12}$  
 **Interval**: $[a, b]$  

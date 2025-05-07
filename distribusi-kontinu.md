@@ -1,0 +1,12 @@
+| Distribusi      | Notasi           | PDF (Fungsi Kepadatan)                     | CDF (Fungsi Kumulatif)               | Mean ($\mu$)       | Varians ($\sigma^2$)   | Parameter               |
+|----------------|------------------|-------------------------------------------|--------------------------------------|-------------------|------------------------|-------------------------|
+| **Uniform**    | $X \sim U(a,b)$  | $f(x) = \frac{1}{b-a}$ untuk $x \in [a,b]$ | $F(x) = \frac{x-a}{b-a}$            | $\frac{a+b}{2}$   | $\frac{(b-a)^2}{12}$   | $a$ (min), $b$ (max)    |
+| **Eksponensial** | $X \sim Exp(\lambda)$ | $f(x) = \lambda e^{-\lambda x}$         | $F(x) = 1 - e^{-\lambda x}$         | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$  | $\lambda$ (rate)        |
+| **Normal**     | $X \sim N(\mu,\sigma^2)$ | $f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $\mu$ | $\sigma^2$ | $\mu$ (mean), $\sigma^2$ (var) |
+| **Gamma**      | $X \sim Gamma(k,\theta)$ | $f(x) = \frac{x^{k-1}e^{-x/\theta}}{\theta^k \Gamma(k)}$ | - | $k\theta$ | $k\theta^2$ | $k$ (shape), $\theta$ (scale) |
+| **Beta**       | $X \sim Beta(\alpha,\beta)$ | $f(x) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$ | $I_x(\alpha,\beta)$ | $\frac{\alpha}{\alpha+\beta}$ | $\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$ | $\alpha$, $\beta$ (shape) |
+| **Chi-Square** | $X \sim \chi^2(k)$ | $f(x) = \frac{1}{2^{k/2}\Gamma(k/2)}x^{k/2-1}e^{-x/2}$ | - | $k$ | $2k$ | $k$ (df) |
+| **t-Student**  | $T \sim t(\nu)$ | $f(t) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\nu\pi}\Gamma(\nu/2)}(1+\frac{t^2}{\nu})^{-(\nu+1)/2}$ | - | $0$ ($\nu>1$) | $\frac{\nu}{\nu-2}$ ($\nu>2$) | $\nu$ (df) |
+| **F**          | $F \sim F(d_1,d_2)$ | $f(x) = \frac{\sqrt{\frac{(d_1x)^{d_1}d_2^{d_2}}{(d_1x+d_2)^{d_1+d_2}}}}{xB(d_1/2,d_2/2)}$ | - | $\frac{d_2}{d_2-2}$ ($d_2>2$) | $\frac{2d_2^2(d_1+d_2-2)}{d_1(d_2-2)^2(d_2-4)}$ ($d_2>4$) | $d_1,d_2$ (df) |
+| **Log-Normal** | $X \sim LN(\mu,\sigma^2)$ | $f(x) = \frac{1}{x\sigma\sqrt{2\pi}}e^{-\frac{(\ln x-\mu)^2}{2\sigma^2}}$ | $\Phi\left(\frac{\ln x-\mu}{\sigma}\right)$ | $e^{\mu+\sigma^2/2}$ | $(e^{\sigma^2}-1)e^{2\mu+\sigma^2}$ | $\mu$, $\sigma^2$ |
+| **Weibull**    | $X \sim Weibull(\lambda,k)$ | $f(x) = \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^k}$ | $1-e^{-(x/\lambda)^k}$ | $\lambda\Gamma(1+1/k)$ | $\lambda^2[\Gamma(1+2/k)-(\Gamma(1+1/k))^2]$ | $\lambda$ (scale), $k$ (shape) |

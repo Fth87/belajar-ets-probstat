@@ -92,15 +92,18 @@
 
 ### 1. Uniform
 **Notasi**: $X \sim \text{U}(a, b)$  
-**PDF**: $f(x) = \begin{cases} 
-\frac{1}{b - a} & \text{untuk } a \leq x \leq b \\
-0 & \text{lainnya}
-\end{cases}$  
-**CDF**: $F(x) = \begin{cases} 
-0 & x < a \\
-\frac{x - a}{b - a} & a \leq x \leq b \\
-1 & x > b
-\end{cases}$  
+**PDF**: 
+$$f(x) = \begin{cases} 
+\frac{1}{b - a} & \text{untuk } a \leq x \leq b \\ 
+0 & \text{lainnya} 
+\end{cases}$$
+
+**CDF**: 
+$$F(x) = \begin{cases} 
+0 & x < a \\ 
+\frac{x - a}{b - a} & a \leq x \leq b \\ 
+1 & x > b 
+\end{cases}$$
 **Mean**: $\mathbb{E}[X] = \frac{a + b}{2}$  
 **Variance**: $\text{Var}(X) = \frac{(b - a)^2}{12}$  
 **Interval**: $[a, b]$  
